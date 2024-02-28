@@ -1,0 +1,53 @@
+.all-CountryCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    background-color: inherit;
+  }
+  
+  #flag {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .CountryCard-container-info p {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  
+  .CountryCard-container h2 {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    max-height: 30px;
+  }
+  
+  .CountryCard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 250px;
+    max-height: 370px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 5px;
+    height: fit-content;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .CountryCard-container:hover {
+    box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+  }
+  

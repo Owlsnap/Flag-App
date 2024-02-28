@@ -1,0 +1,26 @@
+.Home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inputAndDropdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .inputAndDropdown-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px 30px;
+    }
+  }
+  
