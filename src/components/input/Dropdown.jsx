@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import "./Input.css";
 import { DarkModeContext } from "../Darkmode.jsx";
+import arrowDownLight from "../../assets/arrow-down-light.svg";
+import arrowDownDark from "../../assets/arrow-down-dark.svg";
 
-function regionArrowDarkmode() {
-  const { darkMode } = useContext(DarkModeContext);
-
+function regionArrowDarkmode(darkMode) {
   if (darkMode === true) {
-    return "assets/arrow-down-light.svg";
+    return arrowDownLight;
   } else {
-    return "assets/arrow-down-dark.svg";
+    return arrowDownDark;
   }
 }
 
@@ -42,7 +42,7 @@ export default function Dropdown({ handleRegionChange }) {
         <option value="Antarctic">Antarctic</option>
       </select>
       <label htmlFor="filter-by-region">
-        <img src={regionArrowDarkmode()} alt="arrow" />
+        <img src={regionArrowDarkmode(darkMode)} alt="arrow" />
       </label>
     </div>
   );
