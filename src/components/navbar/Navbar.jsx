@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useLocation, useParams } from "react-router-dom";
 import { DarkModeContext, DarkModeToggle } from "../Darkmode.jsx";
 import { Link } from "react-router-dom";
-import moonIcon from "../../assets/moon-bordered.svg";
+import moonIcon from "../../../assets/moon-bordered.svg";
 
 
 export default function Navbar() {
