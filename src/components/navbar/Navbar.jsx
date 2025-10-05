@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { useLocation, useParams } from "react-router-dom";
 import { DarkModeContext, DarkModeToggle } from "../Darkmode.jsx";
 import { Link } from "react-router-dom";
-import moonIcon from "../../../assets/moon-bordered.svg";
 
 
 export default function Navbar() {
@@ -26,7 +25,7 @@ export default function Navbar() {
         <h1 className="flag-app-title">The Flag App</h1>
       </Link>
       <div className="Navbar-dark-mode">
-        <img src={moonIcon} alt="moon-light" />
+        <img src="/assets/moon-bordered.svg" alt="moon-light" />
         <DarkModeToggle />
       </div>
     </div>

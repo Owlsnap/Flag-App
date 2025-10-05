@@ -2,8 +2,6 @@ import React, { useEffect, useState, useContext } from "react";
 import "./Countrypage.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { DarkModeContext } from "../Darkmode";
-import backArrowWhite from "../../../assets/arrow-left.svg";
-import backArrowBlack from "../../../assets/arrow-left-dark.svg";
 
 export default function Countrypage() {
   const { name } = useParams();
@@ -60,11 +58,10 @@ export default function Countrypage() {
   };
 
   function backArrowDarkmode() {
-
     if (darkMode === false) {
-      return <img src={backArrowBlack} alt="backArrowBlack" />;
+      return <img src="/assets/arrow-left-dark.svg" alt="backArrowBlack" />;
     } else {
-      return <img src={backArrowWhite} alt="backArrowWhite" />;
+      return <img src="/assets/arrow-left.svg" alt="backArrowWhite" />;
     }
   }
 

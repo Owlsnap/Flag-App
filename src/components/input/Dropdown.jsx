@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
 import "./Input.css";
 import { DarkModeContext } from "../Darkmode.jsx";
-import arrowDownLight from "../../assets/arrow-down-light.svg";
-import arrowDownDark from "../../assets/arrow-down-dark.svg";
 
 function regionArrowDarkmode(darkMode) {
   if (darkMode === true) {
-    return arrowDownLight;
+    return "/assets/arrow-down-light.svg";
   } else {
-    return arrowDownDark;
+    return "/assets/arrow-down-dark.svg";
   }
 }
 
