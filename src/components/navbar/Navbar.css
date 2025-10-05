@@ -1,0 +1,90 @@
+.Navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    height: 30px;
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .Navbar-dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .Navbar-dark-mode button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: none;
+    transition: all 0.1s ease-in-out;
+    padding-right: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .Navbar-dark-mode img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .Navbar-dark-mode :hover {
+    color: #2b384474;
+  }
+  
+  .Navbar-app-name {
+    margin-left: 50px;
+    text-decoration: none;
+  }
+  
+  .Navbar-app-name h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .Navbar-dark-mode {
+      width: 20px;
+      height: 20px;
+      margin-right: 50px;
+    }
+  
+    .Navbar-dark-mode button {
+      padding-right: 0px;
+      font-size: 12px;
+    }
+  
+    .Navbar-dark-mode img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .Navbar-app-name {
+      margin-left: 0px;
+    }
+  
+    .Navbar-app-name h1 {
+      font-size: 16px;
+      margin-left: 40px;
+    }
+  
+    .logo img {
+      display: none;
+    }
+  
+    .Navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
